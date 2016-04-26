@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Manual Layout Part 1'/>
+        <page name='Manual Layout Part 2'/>
+        <page name='Manual Layout Part 3 - layoutSubviews'/>
+        <page name='Manual Layout Part 4 - layoutSubviews'/>
+        <page name='Manual Layout Part 5 - Autoresizing'/>
+        <page name='Auto Layout'/>
+    </pages>
+</playground>
