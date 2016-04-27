@@ -1,12 +1,13 @@
-import UIKit
-import XCPlayground
-
 /*:
+ [Previous](@previous)
+ 
  # Manual Layout - Part 1
  
  `UIView`'s have a frame property that can be used to position subviews within their parent.  Coordinates are local to the parent view.  So if a subview has a frame with origin `(0, 0)` it will appear in the upper left corner of the parent view.
  
  */
+import UIKit
+import XCPlayground
 
 class ManualLayoutView: UIView {
   
@@ -76,8 +77,40 @@ let view = ManualLayoutView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //: #### What happens when you try to resize the view? 🎻
 view.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+
+
+
+
+
+
+
+
+
+
 
 
 

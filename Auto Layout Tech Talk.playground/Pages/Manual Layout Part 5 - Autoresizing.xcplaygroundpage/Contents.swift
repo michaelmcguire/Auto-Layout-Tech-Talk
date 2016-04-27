@@ -1,12 +1,12 @@
-import UIKit
-import XCPlayground
-
 /*:
+[Previous](@previous)
  # Manual Layout Part 5 - Autoresizing
  
  Beyond setting the `frame` of a subview, UIKit has had limited support for a more declarative layout using Autoresizing masks
  
  */
+import UIKit
+import XCPlayground
 
 class ManualLayoutView: UIView {
   
@@ -34,14 +34,12 @@ class ManualLayoutView: UIView {
     return view
   }()
   
-  // Default initializer
   override init(frame: CGRect) {
     print("init(frame:)")
     super.init(frame: frame)
     
     backgroundColor = [#Color(colorLiteralRed: 0, green: 1, blue: 0, alpha: 1)#]
     
-    // Make sure to add the subviews!
     addSubview(subView1)
     addSubview(subView2)
     addSubview(subView3)
@@ -72,6 +70,8 @@ class ManualLayoutView: UIView {
                             width: width,
                             height: height)
     
+    // M.A.S.K crusaders, working overtime, fighting crime, fighting crime!
+    // https://www.youtube.com/watch?v=gMNsDOOW0Ck
     subView1.autoresizingMask = [
       .FlexibleHeight,
       .FlexibleWidth
@@ -85,7 +85,6 @@ class ManualLayoutView: UIView {
     ]
   }
   
-  // Sonuva
   required init?(coder aDecoder: NSCoder) {
     fatalError("(ノಠ益ಠ)ノ彡┻━┻")
   }
@@ -95,15 +94,6 @@ class ManualLayoutView: UIView {
 
 //: ### Instantiate view
 let view = ManualLayoutView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-
-
-
-
-
-
-
-
-
 
 
 
